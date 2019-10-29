@@ -54,15 +54,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
            String resultadoText = "Faces sorteadas: ";
 
-           if (numDados == 2) {
-               resultado2ImageView.setVisibility(View.VISIBLE);
-           }else{
+           int numFaces;
+           try {
+               numFaces = Integer.parseInt(numFacesEditText.getText().toString());
+           }catch (NumberFormatException e) {
+               numFaces = 6;
+           }
+
+           if (numFaces > 6) {
+               resultadoImageView.setVisibility(View.GONE);
                resultado2ImageView.setVisibility(View.GONE);
-               resultadoText = "Face sorteada: ";
+           }else{
+               resultadoImageView.setVisibility(View.VISIBLE);
+
+               if (numDados == 2){
+                   resultado2ImageView.setVisibility(View.VISIBLE);
+               }else {
+                   resultado2ImageView.setVisibility(View.GONE);
+                   resultadoText = "Face sorteada: ";
+               }
            }
 
            for (int i = 1; i <= numDados; i++) {
-               int resultado =  geradorRandomico.nextInt(6) + 1;
+               int resultado =  geradorRandomico.nextInt(numFaces) + 1;
                resultadoText += resultado + ", ";
                ImageView iv = (i == 1) ? resultadoImageView : resultado2ImageView;
                setImageResource(iv, resultado);
