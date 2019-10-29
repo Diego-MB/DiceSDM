@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         resultadoImageView = findViewById(R.id.resultadoImageView);
 
+        numFacesEditText = findViewById(R.id.numFacesEditText);
+
         jogarDadoButton = findViewById(R.id.jogarDadoButton);
         jogarDadoButton.setOnClickListener(this);
 
