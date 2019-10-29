@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Spinner numDadosSpinner;
     private ImageView resultado2ImageView;
+
+    private EditText numFacesEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
