@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -15,6 +16,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private TextView resultadoTextView;
     private Button jogarDadoButton;
+
+    private ImageView resultadoImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
