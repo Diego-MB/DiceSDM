@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Dice SDM</string>
+    <string name="texto1">Clique no botão abaixo para jogar o dado</string>
+    <string name="textoBtn">Jogar</string>
+    <string name="texto2">Ainda não foi lançado</string>
 </resources>
