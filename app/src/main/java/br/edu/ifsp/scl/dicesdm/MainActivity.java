@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        numDadosSpinner = findViewById(R.id.numDadosSpinner);
+        resultado2ImageView = findViewById(R.id.resultado2ImageView);
+
         geradorRandomico = new Random(System.currentTimeMillis());
 
         resultadoTextView = findViewById(R.id.resultadoTextView);
