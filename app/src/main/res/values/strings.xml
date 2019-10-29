@@ -3,6 +3,7 @@
     <string name="texto1">Clique no botão abaixo para jogar o dado</string>
     <string name="textoBtn">Jogar</string>
     <string name="texto2">Ainda não foi lançado</string>
+    <string name="numero_dados">Selecione o número de dados</string>
     <string-array name="numero_dados">
         <item>1</item>
         <item>2</item>
