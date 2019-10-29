@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (view.getId() == R.id.jogarDadoButton) {
             int resultado = geradorRandomico.nextInt(6) + 1;
             resultadoTextView.setText("Face sorteada: " + resultado);
+            setImageResource(resultadoImageView, resultado);
         }
     }
 
